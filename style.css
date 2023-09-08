@@ -3,6 +3,26 @@
 
 */
 
-body{
-    background-color: #ff0000;
+@media(min-width: 576px){
+   body {
+        background-color: rgb(28, 189, 189)
+   }
+}
+
+@media(min-width : 768px){
+    body{
+        background-color: blueviolet;
+    }
+}
+
+@media(min-width : 992px){
+    body{
+        background-color:darkgreen;
+    }
+}
+
+@media(min-width : 1200px){
+    body{
+        background-color: crimson;
+    }
 }
