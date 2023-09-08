@@ -3,26 +3,67 @@
 
 */
 
-@media(min-width: 576px){
-   body {
-        background-color: rgb(28, 189, 189)
-   }
+/*CSS Reset*/
+/*Importação*/
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    border: 0;
+    padding: 0;
 }
 
-@media(min-width : 768px){
-    body{
+
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1em;
+}
+
+/*Layout*/
+.Container {
+    margin: 0 auto;
+    background-color: aqua;
+}
+
+
+@media(min-width: 576px) {
+    body {
+        background-color: rgb(28, 189, 189);
+    }
+
+    .Container {
+        max-width: 540px;
+    }
+}
+
+@media(min-width : 768px) {
+    body {
         background-color: blueviolet;
     }
+
+    .Container {
+        max-width: 720px;
+    }
+
 }
 
-@media(min-width : 992px){
-    body{
-        background-color:darkgreen;
+@media(min-width : 992px) {
+    body {
+        background-color: darkgreen;
+    }
+
+    .Container {
+        max-width: 960px;
     }
 }
 
-@media(min-width : 1200px){
-    body{
+@media(min-width : 1200px) {
+    body {
         background-color: crimson;
+    }
+
+    .Container {
+        max-width: 1140px;
     }
 }
