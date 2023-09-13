@@ -19,7 +19,7 @@
 body {
     font-family: 'Open Sans', sans-serif;
     font-size: 1em;
-    background-color: #091833;
+    background-color: #000723;
 }
 
 /*Layout*/
@@ -31,6 +31,17 @@ body {
     display: flex;
     justify-content: space-between;
 
+}
+
+.Botao{
+    text-decoration: none;
+    color: #ff0677;
+    font-size: 1.3em;
+    font-weight: 700;
+    background-color: #6ecbf5;
+    padding: 10px 40px;
+    border: 2px solid #ff0677;
+    border-radius: 25px;
 }
 
 /*topo do site */
@@ -86,9 +97,48 @@ header {
     height: 128px;
 }
 
+#sobre{
+    margin-top: 40px;
+}
+
+
+
+main{
+    height: 75vh;
+    background: url(img/fundo4.jpg);
+    background-size: cover;
+    color:white;
+        display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+
+
+main a{
+    color: #ff0677;
+}
+
+main h1{
+    font-size: 2.5em;
+}
+
+main h2{
+    font-size: 1 em;
+    margin: 20px 0px 50px 0px;
+}
+
+
+
+
 @media(min-width: 576px) {
     .Container {
         max-width: 540px;
+    }
+
+    main h1,main h2{
+        text-shadow: #000723,0.5em,0.5em,0.5em;
     }
 }
 
@@ -97,6 +147,18 @@ header {
         max-width: 720px;
     }
 
+    main {
+        height: 45vh;
+    }
+
+    main h1{
+        font-size: 5:5em;
+    }
+    main h2{
+        font-size: 2em;
+    }
+
+
 }
 
 @media(min-width : 992px) {
@@ -104,14 +166,20 @@ header {
     .Container {
         max-width: 960px;
     }
+    main{
+        height: 70vh;
+    }
 }
 
 @media(min-width : 1200px) {
 
-
     .Container {
         max-width: 1140px;
         
+    }
+    main{
+        height: 75vh;
+
     }
 
     header {
@@ -149,6 +217,7 @@ header {
         border-right: 1px solid#6ecbf5;
         margin-top: 30px;
         margin-right: 20px;
+        border-radius: 25px;
 
     }
     nav ul li a{
