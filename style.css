@@ -11,6 +11,7 @@
     margin: 0;
     border: 0;
     padding: 0;
+
 }
 
 
@@ -18,30 +19,80 @@
 body {
     font-family: 'Open Sans', sans-serif;
     font-size: 1em;
+    background-color: #091833;
 }
 
 /*Layout*/
 .Container {
-    margin: 0 auto;
-    background-color: aqua;
+    margin:0 auto;
 }
 
+.Flex {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+/*topo do site */
+#topo {
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+}
+
+#check {
+    display: none;
+}
+
+label {
+    font-size: 3em;
+    padding-right: 15px;
+
+}
+
+nav ul {
+    list-style: none;
+    background-color: cyan;
+    height: 100vh;
+    position: fixed;
+    top: 60px;
+    right: -100%;
+    width: 30%;
+    transition: all 0.4s;
+}
+
+#check:checked~ul {
+    right: 0;
+
+}
+
+nav ul li {
+    padding: 20px;
+    border-bottom: 1px solid blue;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+header {
+    height: 60px;
+
+}
+
+#logo img {
+    width: 128px;
+    height: 128px;
+}
 
 @media(min-width: 576px) {
-    body {
-        background-color: rgb(28, 189, 189);
-    }
-
     .Container {
         max-width: 540px;
     }
 }
 
 @media(min-width : 768px) {
-    body {
-        background-color: blueviolet;
-    }
-
     .Container {
         max-width: 720px;
     }
@@ -49,9 +100,6 @@ body {
 }
 
 @media(min-width : 992px) {
-    body {
-        background-color: darkgreen;
-    }
 
     .Container {
         max-width: 960px;
@@ -59,11 +107,59 @@ body {
 }
 
 @media(min-width : 1200px) {
-    body {
-        background-color: crimson;
-    }
+
 
     .Container {
         max-width: 1140px;
+        
     }
+
+    header {
+        height: 120px;
+    }
+
+    #logo img {
+        height: 189px;
+        width: 189px;
+        margin-top: 30px;
+    }
+
+    label {
+        display: none;
+    }
+
+    nav {
+        margin-right: 20px;
+
+    }
+
+    nav ul {
+        position: static;
+        height: auto;
+        width: 100%;
+        background-color: transparent;
+
+    }
+
+    nav ul li {
+        float: right;
+        border-top: 2px solid #6ecbf5;
+        border-left: 1px solid #6ecbf5;
+        border-bottom: 2px solid #6ecbf5;
+        border-right: 1px solid#6ecbf5;
+        margin-top: 30px;
+        margin-right: 20px;
+
+    }
+    nav ul li a{
+        color: #ea00d9;
+    }
+
+    nav ul li a:hover{
+        color:#ff0677;
+    }
+
+
+
+
 }
