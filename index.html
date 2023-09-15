@@ -15,15 +15,17 @@
 <body>
     <!-- Cabeçalho -->
     <header id="inicio">
+        <div id="logo">
+            <img src="img/maomec.png" alt="hal 9000">
+            <a>VENHA APRENDER!</a>
+         </div>
         <div class="Container Flex">
-            <div id="logo">
-                <img src="img/maomec.png" alt="hal 9000">
-            </div>
+            
             <nav>
                 <input type="checkbox" id="check">
                 <label for="check">&#x2630;</label>
                 <ul>
-                    <li><a id="ini" href="#inicio">Inicio</a></li>
+                    <li><a href="#inicio">Inicio</a></li>
                     <li><a href="#sobre">Sobre</a></li>
                     <li><a href="#conteudo">Conteúdo</a></li>
                     <li><a href="#contato">Contato</a></li>
@@ -34,8 +36,8 @@
     <!-- Destaque -->
     <main>
         <div class="Container main">
-            <h1> Aprendendo a Programar</h1>
-            <h2> Cursos. Pdfs. Apostilas.</h2>
+            <h1> <b>Aprendendo a Programar</b></h1>
+            <h2><b>Cursos. Pdfs. Apostilas.</b> </h2>
             <a href="https://www2.uepg.br/prograd/wp-content/uploads/sites/19/2023/06/MATRIZ-CURRICULAR-Eng-Software-SITE.pdf"
                 target="_blank" class="Botao">Saiba+</a>
         </div>
@@ -43,8 +45,44 @@
     </main>
     <!-- Sobre -->
     <section id="sobre">
-        <div class="Container">
-            <h2>Começar a Estudar</h2>
+        <div class="Container Flex2">
+            <div id="destaqueSobre">
+                <img src="img/cyberPC.png" id="pc" alt="Meios de estudo">
+            </div>
+            <div id="textoSobre">
+                <h2>Começe a Estudar</h2>
+                <p><b>Aprenda agora de forma simples e direta,conteúdos escolhidos visando o aprendizado do zero a contrução de uma base sólida em programação</b>
+                </p>
+                <div class="TopicoSobre Flex2">
+                    <a href="https://www.cursoemvideo.com/" target="_blank" class="Curso"><img src="img/iconLogic.png"
+                            id="curso" alt="cursosGratuitos">
+
+                    </a>
+                    <a href="https://www.cursoemvideo.com/" target="_blank">
+                        <p> Cursos Gratuitos</p>
+                    </a>
+                </div>
+                <div class="TopicoSobre Flex2">
+                    <a href="https://educapes.capes.gov.br/bitstream/capes/560827/2/Apostila%20-%20Curso%20de%20L%C3%B3gica%20de%20Programa%C3%A7%C3%A3o.pdf"
+                        target="_blank" class="Pdf"><img src="img/iconBook.png" id="pdf" alt="Pdf">
+                    </a>
+                    <a href="https://educapes.capes.gov.br/bitstream/capes/560827/2/Apostila%20-%20Curso%20de%20Lógica%20de%20Programação.pdf"
+                        target="_blank">
+                        <p >Pdf Lógica de Programação</p>
+                    </a>
+
+                </div>
+                <div class="TopicoSobre Flex2">
+                    <a href="https://educapes.capes.gov.br/bitstream/capes/566023/2/Produto%20-%20Michel%20de%20Souza%202019.pdf"
+                        target="_blank" class="Apostila"><img src="img/pasta.png" id="apostila"
+                            alt="Apostila Scratch"></a>
+                    <a href="https://educapes.capes.gov.br/bitstream/capes/566023/2/Produto%20-%20Michel%20de%20Souza%202019.pdf"
+                        target="_blank">
+                        <p>Apostila Scratch</p>
+                    </a>
+                </div>
+
+            </div>
         </div>
     </section>
     <!-- One Page -->

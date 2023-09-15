@@ -7,6 +7,9 @@
 /*Importação*/
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
 
+
+  @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,800&display=swap');
+
 * {
     margin: 0;
     border: 0;
@@ -24,16 +27,79 @@ body {
 
 /*Layout*/
 .Container {
-    margin:0 auto;
+    margin: 0 auto;
 }
 
-.Flex {
+.Flex{
     display: flex;
     justify-content: space-between;
+    color: #fff;
 
 }
 
-.Botao{
+.Flex2 {
+    display: flex;
+    align-items: center;
+}
+
+#logo img {
+    position: static;
+    padding-right: 10px;
+    margin-top: 5px;
+    float: left;
+    height: 50px;
+    width: 50px;
+}
+
+#logo a{
+    position: static;
+    float: left;
+    margin-top: 20px;
+    color: #00eade;
+    font-weight: 800;
+    font-size: 1em;
+}
+
+
+
+
+
+.TextoSobre {
+    color: wheat;
+
+}
+
+#curso {
+    margin-left: 3px;
+    height: 70px;
+    width: 70px;
+}
+
+#pdf {
+    height: 80px;
+    width: 80px;
+}
+
+#apostila {
+    margin-left: 8px;
+    height: 70px;
+    width: 70px;
+}
+
+.TopicoSobre a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.TopicoSobre{
+    padding-top: 10px;
+}
+.TopicoSobre img{
+    padding-right: 10px;
+    
+}
+
+.Botao {
     text-decoration: none;
     color: #ff0677;
     font-size: 1.3em;
@@ -56,8 +122,11 @@ body {
 }
 
 label {
+    position: static;
+    float: right;
+    padding-left: 115px;
     font-size: 3em;
-    padding-right: 15px;
+    color: #00eade;
 
 }
 
@@ -79,7 +148,7 @@ nav ul {
 
 nav ul li {
     padding: 20px;
-    border-bottom: 1px solid blue;
+    border-bottom: 3px solid #ff0677;
 }
 
 nav ul li a {
@@ -88,27 +157,24 @@ nav ul li a {
 }
 
 header {
+    background: url("img/fundo3.jpg");
+    background-position: bottom;
+    background-size: cover;
+    height: 75vh;
     height: 60px;
 
 }
 
-#logo img {
-    width: 128px;
-    height: 128px;
-}
-
-#sobre{
-    margin-top: 40px;
-}
 
 
 
-main{
+main {
     height: 75vh;
     background: url(img/fundo4.jpg);
     background-size: cover;
-    color:white;
-        display: flex;
+    background-position: center;
+    color: #fff;
+    display: flex;
     flex-direction: column;
     justify-content: center;
     text-align: center;
@@ -116,15 +182,15 @@ main{
 
 
 
-main a{
+main a {
     color: #ff0677;
 }
 
-main h1{
+main h1 {
     font-size: 2.5em;
 }
 
-main h2{
+main h2 {
     font-size: 1 em;
     margin: 20px 0px 50px 0px;
 }
@@ -132,14 +198,61 @@ main h2{
 
 
 
+
+#sobre {
+    padding: 20px 0px;
+    background: url(img/funto.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+#destaqueSobre {
+    display: none;
+}
+
+#textoSobre {
+    color: #fff;
+    padding-bottom: 100px;
+    padding-left: 30px;
+    text-shadow: #000723, 0.5em, 0.5em, 0.5em;
+}
+
+#textoSobre h2 {
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+#pc {
+    position: static;
+    float: left;
+    margin-bottom: 100px;
+    height: 400px;
+    width: 400px;
+    border-radius: 50%;
+    
+}
+
 @media(min-width: 576px) {
     .Container {
         max-width: 540px;
     }
 
-    main h1,main h2{
-        text-shadow: #000723,0.5em,0.5em,0.5em;
+    label {
+        position: static;
+        float: right;
+        padding-left: 410px;
+        font-size: 3em;
+        color: #00eade;
+    
     }
+
+    main h1,
+    main h2 {
+        text-shadow: #000723, 0.5em, 0.5em, 0.5em;
+    }
+
+    
+
 }
 
 @media(min-width : 768px) {
@@ -151,14 +264,14 @@ main h2{
         height: 45vh;
     }
 
-    main h1{
+    main h1 {
         font-size: 5:5em;
     }
-    main h2{
+
+    main h2 {
         font-size: 2em;
     }
-
-
+  
 }
 
 @media(min-width : 992px) {
@@ -166,7 +279,8 @@ main h2{
     .Container {
         max-width: 960px;
     }
-    main{
+
+    main {
         height: 70vh;
     }
 }
@@ -175,9 +289,43 @@ main h2{
 
     .Container {
         max-width: 1140px;
-        
+
     }
-    main{
+
+    .Flex {
+        display: flex;
+        float: right;
+        justify-content: right;
+
+    }
+
+    #destaqueSobre {
+        display: inline;
+    }
+
+    
+    #logo img {
+        position: static;
+        padding-right: 20px;
+        float: left;
+        height: 100px;
+        width: 100px;
+    }
+
+    #logo a{
+        position: static;
+        float: left;
+        margin-top: 40px;
+        color: #00eade;
+        font-weight: 800;
+        font-size: 1.5em;
+    }
+
+   
+    
+
+
+    main {
         height: 75vh;
 
     }
@@ -186,11 +334,8 @@ main h2{
         height: 120px;
     }
 
-    #logo img {
-        height: 189px;
-        width: 189px;
-        margin-top: 30px;
-    }
+
+
 
     label {
         display: none;
@@ -206,7 +351,6 @@ main h2{
         height: auto;
         width: 100%;
         background-color: transparent;
-
     }
 
     nav ul li {
@@ -220,14 +364,22 @@ main h2{
         border-radius: 25px;
 
     }
-    nav ul li a{
-        color: #ea00d9;
+
+    nav ul li a {
+        color: #00eade;
     }
 
-    nav ul li a:hover{
-        color:#ff0677;
+    nav ul li a:hover {
+        color: #ff0677;
     }
 
+    #sobre{
+        background-attachment: fixed;
+    }
+
+    .TopicoSobre a:hover {
+        color: #ff0677;
+    }
 
 
 
