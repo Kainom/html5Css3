@@ -41,6 +41,10 @@ body {
     display: flex;
     align-items: center;
 }
+.Flex3{
+    display: flex;
+    flex-direction: column;
+}
 
 #logo img {
     position: static;
@@ -70,6 +74,7 @@ body {
 }
 
 #curso {
+    margin-top: 20px;
     margin-left: 3px;
     height: 70px;
     width: 70px;
@@ -122,11 +127,11 @@ body {
 }
 
 label {
-    position: static;
+    position: fixed;
     float: right;
     padding-left: 115px;
     font-size: 3em;
-    color: #00eade;
+    color: rgba(3, 253, 241, 0.5);
 
 }
 
@@ -170,7 +175,7 @@ header {
 
 main {
     height: 75vh;
-    background: url(img/fundo4.jpg);
+    background: url(img/what.jpg);
     background-size: cover;
     background-position: center;
     color: #fff;
@@ -215,6 +220,7 @@ main h2 {
     padding-bottom: 100px;
     padding-left: 30px;
     text-shadow: #000723, 0.5em, 0.5em, 0.5em;
+    font-size: 1.2em;
 }
 
 #textoSobre h2 {
@@ -232,17 +238,71 @@ main h2 {
     
 }
 
+#onepage{
+    padding: 50px 10px;
+    border: #6ecbf5;
+}
+#onepage h2{
+    margin-bottom: 10px;
+}
+
+#onepage p{
+    margin-bottom: 25px;
+}
+#video video{
+    width: 340px;
+    height: 191px;
+    border: #ff0677 5px solid;
+
+}
+
+#textoSite{
+    color: #fff;
+    text-shadow:  #000723,0.5em,0.5em,0.5em;
+
+}
+#textoSite h2{
+    font-size: 1.5em;
+}
+#textoSite p{
+    font-size: 1.2em;
+}
+
+#onepage{
+    background-image: url(img/testepunk.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+
 @media(min-width: 576px) {
     .Container {
         max-width: 540px;
     }
 
+    .Flex3{
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    #textoSite{
+        font-size: 1.2em;
+    }
+    
+    #video video{
+        width: 500px;
+        height: 281px;
+
+    }
+
+
     label {
-        position: static;
+        position: fixed;
         float: right;
         padding-left: 410px;
         font-size: 3em;
-        color: #00eade;
+        color: rgba(0, 234, 222,0.5);
     
     }
 
@@ -259,7 +319,10 @@ main h2 {
     .Container {
         max-width: 720px;
     }
-
+    #video video{
+        width: 340px;
+        height: 191px;
+    }
     main {
         height: 45vh;
     }
@@ -297,6 +360,11 @@ main h2 {
         float: right;
         justify-content: right;
 
+    }
+
+    .Flex3{
+        flex-direction: row;
+        align-items: center;
     }
 
     #destaqueSobre {
@@ -380,7 +448,19 @@ main h2 {
     .TopicoSobre a:hover {
         color: #ff0677;
     }
+    #video{
+        padding-left: 10px;
+    }
+    
 
+    #video video{
+        width: 600px;
+        height: 338px;
+    }
+
+    #textoSite p{
+        font-size: 1em;
+    }
 
 
 }
