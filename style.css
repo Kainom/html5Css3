@@ -45,6 +45,20 @@ body {
     display: flex;
     flex-direction: column;
 }
+.Flex4{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+
+#code{
+    width: 200px;
+    height: 200px;
+
+}
+
+
 
 #logo img {
     position: static;
@@ -63,10 +77,6 @@ body {
     font-weight: 800;
     font-size: 1em;
 }
-
-
-
-
 
 .TextoSobre {
     color: wheat;
@@ -205,7 +215,6 @@ main h2 {
 
 
 #sobre {
-    padding: 20px 0px;
     background: url(img/funto.jpg);
     background-size: cover;
     background-position: center;
@@ -218,7 +227,6 @@ main h2 {
 #textoSobre {
     color: #fff;
     padding-bottom: 100px;
-    padding-left: 30px;
     text-shadow: #000723, 0.5em, 0.5em, 0.5em;
     font-size: 1.2em;
 }
@@ -269,11 +277,66 @@ main h2 {
 }
 
 #onepage{
-    background-image: url(img/testepunk.jpg);
+    background-image: url(img/citypunk.jpg);
     background-size: cover;
     background-position: center;
+    padding: 50px 10px;
 }
 
+#roadmap{
+    padding: 50px 10px;
+}
+#roadmap h2{
+    margin-bottom: 10px;
+
+}
+#roadmap p{
+    margin-bottom: 40px;
+}
+
+#roadmap{
+    background-image: url(img/funto.jpg);
+    background-size: cover;
+    background-position:center;
+    padding: 50px 0px;
+}
+#roadmap a{
+   padding: 10px 30px;
+}
+
+#textoroad{
+    color: #fff;
+}
+#textoroad span{
+    display: none;
+}
+
+
+#qrcode a:hover{
+    color: #ff0677;
+}
+#code{
+    display: none;
+    margin-left: 10px;
+}
+
+
+
+@media(min-width:360px){
+    label{
+        padding-left: 100px;
+    }
+}
+@media(min-width:390px){
+    label{
+        padding-left: 130px;
+    }
+}
+@media(min-width:412px){
+    label{
+        padding-left: 150px;
+    }
+}
 
 @media(min-width: 576px) {
     .Container {
@@ -285,6 +348,7 @@ main h2 {
         flex-direction: column;
 
     }
+    
 
     #textoSite{
         font-size: 1.2em;
@@ -298,12 +362,7 @@ main h2 {
 
 
     label {
-        position: fixed;
-        float: right;
-        padding-left: 410px;
-        font-size: 3em;
-        color: rgba(0, 234, 222,0.5);
-    
+        padding-left: 410px;    
     }
 
     main h1,
@@ -315,20 +374,31 @@ main h2 {
 
 }
 
+@media(min-width:700px){
+    label{
+        padding-left: 470px;
+    }
+}
 @media(min-width : 768px) {
     .Container {
         max-width: 720px;
     }
+    label {
+        padding-left: 500px;    
+    }
+    #onepage{
+        padding-bottom: 20px;
+    }
     #video video{
-        width: 340px;
-        height: 191px;
+        width: 600px;
+        height: 337px;
     }
     main {
-        height: 45vh;
+        height: 75vh;
     }
 
     main h1 {
-        font-size: 5:5em;
+        font-size: 3em;
     }
 
     main h2 {
@@ -337,15 +407,41 @@ main h2 {
   
 }
 
+@media(min-width:800px){
+    label{
+        padding-left: 580px;
+    }
+}
+@media(min-width:890px){
+    label{
+        padding-left: 635px;
+    }
+}
+@media(min-width:900px){
+    label{
+        padding-left: 650px;
+    }
+}
+
 @media(min-width : 992px) {
+
 
     .Container {
         max-width: 960px;
     }
-
+    label {
+        padding-left: 910px;    
+    }
     main {
         height: 70vh;
     }
+}
+
+@media(min-width : 1000px) {
+  label{
+    padding-left: 900px;
+  }
+
 }
 
 @media(min-width : 1200px) {
@@ -443,6 +539,11 @@ main h2 {
 
     #sobre{
         background-attachment: fixed;
+         padding: 50px 0px;
+    }
+
+    #textoSobre{
+        padding-left: 30px;
     }
 
     .TopicoSobre a:hover {
@@ -455,11 +556,22 @@ main h2 {
 
     #video video{
         width: 600px;
-        height: 338px;
+        height: 337.50px;
     }
 
     #textoSite p{
         font-size: 1em;
+    }
+    
+    #code{
+        display: inline;
+    }
+    #roadmap{
+        background-attachment: fixed;
+    }
+    
+    #textoroad span{
+        display: inline;
     }
 
 
