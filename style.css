@@ -47,15 +47,77 @@ body {
 }
 .Flex4{
     display: flex;
-    flex-direction: row;
     align-items: center;
 }
+
+.Flex5{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.Flex6{
+  display: flex;
+  align-items:start;
+}
+
+#roda{
+    background-image:url(img/funto.jpg);
+}
+
+.Card{
+    margin-top: 25px;
+    width: 338px;
+    height: 520px;
+    background-color:blueviolet;
+    border: 5px solid #6ecbf5;
+    border-radius: 25px;
+    text-align: center;
+
+}
+
+.Card img{
+    border-radius: 25px 25px 0px 0px;
+}
+
+.Card h3{
+    margin-top: 15px;
+    color: #fff;
+}
+
+.Card p{
+    color: #fff;
+    text-align: left;
+    padding: 10px 30px 50px 30px;
+    text-shadow: #000723 0.5em 0.5em 0.5em;
+}
+
+.Card a{
+    padding: 10px 100px;
+}
+#conteudo{
+    padding: 50px 0px;
+    background-image: url(img/citypunk.jpg);
+}
+
+ #conteudo h2{
+    text-align: center;
+    color: #fff;
+    
+}
+
+  
 
 
 #code{
     width: 200px;
     height: 200px;
 
+}
+
+#iconeMapa{
+    border-radius: 50px;
 }
 
 
@@ -157,13 +219,18 @@ nav ul {
 }
 
 #check:checked~ul {
-    right: 0;
+    right: 0%;
 
 }
 
 nav ul li {
     padding: 20px;
     border-bottom: 3px solid #ff0677;
+    border-left: 3px solid #ff0677;
+    border-right: 3px solid #ff0677;
+}
+nav ul  .inici{
+    border-top: 3px solid #ff0677;
 }
 
 nav ul li a {
@@ -277,8 +344,7 @@ main h2 {
 }
 
 #onepage{
-    background-image: url(img/citypunk.jpg);
-    background-size: cover;
+    background-image: url(img/ponk.jpg);
     background-position: center;
     padding: 50px 10px;
 }
@@ -321,14 +387,23 @@ main h2 {
 }
 
 
-
+@media(min-width:320px){
+    label{
+        padding-left: 60px;
+        position: fixed;
+        
+    }
+}
 @media(min-width:360px){
     label{
         padding-left: 100px;
     }
+     
+    
 }
 @media(min-width:390px){
     label{
+        position: fixed;
         padding-left: 130px;
     }
 }
@@ -337,6 +412,7 @@ main h2 {
         padding-left: 150px;
     }
 }
+
 
 @media(min-width: 576px) {
     .Container {
@@ -519,24 +595,30 @@ main h2 {
 
     nav ul li {
         float: right;
-        border-top: 2px solid #6ecbf5;
-        border-left: 1px solid #6ecbf5;
-        border-bottom: 2px solid #6ecbf5;
-        border-right: 1px solid#6ecbf5;
+        border-top: 3px solid #6ecbf5;
+        border-left: 3px solid #6ecbf5;
+        border-bottom: 3px solid #6ecbf5;
+        border-right: 3px solid#6ecbf5;
         margin-top: 30px;
         margin-right: 20px;
         border-radius: 25px;
 
     }
+    nav ul .inici{
+       border-top: 3px solid #6ecbf5;
+    }
 
     nav ul li a {
         color: #00eade;
+        text-shadow:#000723 0.5em 0.5em 0.5em;
+        
     }
 
     nav ul li a:hover {
         color: #ff0677;
     }
 
+    
     #sobre{
         background-attachment: fixed;
          padding: 50px 0px;
@@ -573,6 +655,10 @@ main h2 {
     #textoroad span{
         display: inline;
     }
+    #roda{
+        background-attachment: fixed;
+    }
+
 
 
 }

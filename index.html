@@ -1,165 +1,211 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width= , initial-scale=1.0" />
-    <title>Dicas de Estudo</title>
-    <meta
-      name="description"
-      content="Dicas e materiais de estudo para quem deseja dar os primeiros passos no mundo da programação"
-    />
-    <link rel="icon" href="img/maomec.png" />
-    <link rel="stylesheet" href="style.css" />
-  </head>
 
-  <body>
-    <!-- Cabeçalho -->
-    <header id="inicio">
-      <div id="logo">
-        <img src="img/maomec.png" alt="hal 9000" />
-        <a>VENHA APRENDER!</a>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width= , initial-scale=1.0" />
+  <title>Dicas de Estudo</title>
+  <meta name="description"
+    content="Dicas e materiais de estudo para quem deseja dar os primeiros passos no mundo da programação" />
+  <link rel="icon" href="img/maomec.png" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <!-- Cabeçalho -->
+  <header id="inicio">
+    <div id="logo">
+      <img src="img/maomec.png" alt="hal 9000" />
+      <a>VENHA APRENDER!</a>
+    </div>
+    <div class="Container Flex">
+      <nav>
+        <input type="checkbox" id="check" />
+        <label for="check">&#x2630;</label>
+        <ul>
+          <li class="inici"><b><a href="#inicio">Inicio</a></li></b>
+          <li><b><a href="#sobre">Sobre</a></li></b>
+          <li><b><a href="#conteudo">Conteúdo</a></li></b>
+          <li><b><a href="#contato">Contato</a></li></b>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <!-- Destaque -->
+  <main>
+    <div class="Container main">
+      <h1><b>Aprendendo a Programar</b></h1>
+      <h2><b>Cursos. Pdfs. Apostilas.</b></h2>
+      <a href="https://www2.uepg.br/prograd/wp-content/uploads/sites/19/2023/06/MATRIZ-CURRICULAR-Eng-Software-SITE.pdf"
+        target="_blank" class="Botao">Saiba +</a>
+    </div>
+  </main>
+  <!-- Sobre -->
+  <section id="sobre">
+    <div class="Container Flex2">
+      <div id="destaqueSobre">
+        <img src="img/cyberPC.png" id="pc" alt="Meios de estudo" />
       </div>
-      <div class="Container Flex">
-        <nav>
-          <input type="checkbox" id="check" />
-          <label for="check">&#x2630;</label>
-          <ul>
-            <li><a href="#inicio">Inicio</a></li>
-            <li><a href="#sobre">Sobre</a></li>
-            <li><a href="#conteudo">Conteúdo</a></li>
-            <li><a href="#contato">Contato</a></li>
-          </ul>
-        </nav>
-      </div>
-    </header>
-    <!-- Destaque -->
-    <main>
-      <div class="Container main">
-        <h1><b>Aprendendo a Programar</b></h1>
-        <h2><b>Cursos. Pdfs. Apostilas.</b></h2>
-        <a
-          href="https://www2.uepg.br/prograd/wp-content/uploads/sites/19/2023/06/MATRIZ-CURRICULAR-Eng-Software-SITE.pdf"
-          target="_blank"
-          class="Botao"
-          >Saiba+</a
-        >
-      </div>
-    </main>
-    <!-- Sobre -->
-    <section id="sobre">
-      <div class="Container Flex2">
-        <div id="destaqueSobre">
-          <img src="img/cyberPC.png" id="pc" alt="Meios de estudo" />
+      <div id="textoSobre">
+        <h2><b>Começe a Estudar!</b></h2>
+        <p>
+          <b>Aprenda agora de forma simples e direta,conteúdos escolhidos
+            visando o aprendizado do zero a contrução de uma base sólida em
+            programação</b>
+        </p>
+        <div class="TopicoSobre Flex2">
+          <a href="https://www.cursoemvideo.com/" target="_blank" class="Curso"><img src="img/iconLogic.png" id="curso"
+              alt="cursosGratuitos" title="Ir ao curso em video" />
+          </a>
+          <a href="https://www.cursoemvideo.com/" target="_blank">
+            <p>Cursos Gratuitos</p>
+          </a>
         </div>
-        <div id="textoSobre">
-          <h2><b>Começe a Estudar!</b></h2>
+        <div class="TopicoSobre Flex2">
+          <a href="https://educapes.capes.gov.br/bitstream/capes/560827/2/Apostila%20-%20Curso%20de%20L%C3%B3gica%20de%20Programa%C3%A7%C3%A3o.pdf"
+            target="_blank" class="Pdf"><img src="img/iconBook.png" id="pdf" alt="Pdf" title="Abrir pdf" />
+          </a>
+          <a href="https://educapes.capes.gov.br/bitstream/capes/560827/2/Apostila%20-%20Curso%20de%20Lógica%20de%20Programação.pdf"
+            target="_blank">
+            <p>Pdf Lógica de Programação</p>
+          </a>
+        </div>
+        <div class="TopicoSobre Flex2">
+          <a href="https://educapes.capes.gov.br/bitstream/capes/566023/2/Produto%20-%20Michel%20de%20Souza%202019.pdf"
+            target="_blank" class="Apostila"><img src="img/pasta.png" id="apostila" alt="Apostila Scratch"
+              title="Abrir apostila" /></a>
+          <a href="https://educapes.capes.gov.br/bitstream/capes/566023/2/Produto%20-%20Michel%20de%20Souza%202019.pdf"
+            target="_blank">
+            <p>Apostila Scratch</p>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- One Page -->
+  <section id="onepage">
+    <div class="Container Flex3">
+      <div id="textoSite">
+        <h2><b>Por onde Começar?</b></h2>
+        <p>
+          <b>É preciso saber o caminho a ser trilhado, pensando nisso nós
+            elaboramos algumas dicas e apontamentos para seus primeiros passos
+            com programação</b>
+        </p>
+      </div>
+      <div id="video">
+        <video src="video/ola.mp4" controls width="560px" height="315"></video>
+      </div>
+    </div>
+  </section>
+  <!-- Wireframe -->
+  <section id="roadmap">
+    <div class="Container Flex4">
+      <div id="textoroad">
+        <h2>RoadMap</h2>
+        <b>
           <p>
-            <b
-              >Aprenda agora de forma simples e direta,conteúdos escolhidos
-              visando o aprendizado do zero a contrução de uma base sólida em
-              programação</b
-            >
+            Mapa mental para ajudar no seu aprendizado. Contém apontamentos de
+            algumas linguagens e uma trilha organizada para um melhor
+            aproveitamento dos estudos. Clique no botão<span>
+              ou escanei o QRcode</span>
           </p>
-          <div class="TopicoSobre Flex2">
-            <a
-              href="https://www.cursoemvideo.com/"
-              target="_blank"
-              class="Curso"
-              ><img src="img/iconLogic.png" id="curso" alt="cursosGratuitos" />
-            </a>
-            <a href="https://www.cursoemvideo.com/" target="_blank">
-              <p>Cursos Gratuitos</p>
-            </a>
-          </div>
-          <div class="TopicoSobre Flex2">
-            <a
-              href="https://educapes.capes.gov.br/bitstream/capes/560827/2/Apostila%20-%20Curso%20de%20L%C3%B3gica%20de%20Programa%C3%A7%C3%A3o.pdf"
-              target="_blank"
-              class="Pdf"
-              ><img src="img/iconBook.png" id="pdf" alt="Pdf" />
-            </a>
-            <a
-              href="https://educapes.capes.gov.br/bitstream/capes/560827/2/Apostila%20-%20Curso%20de%20Lógica%20de%20Programação.pdf"
-              target="_blank"
-            >
-              <p>Pdf Lógica de Programação</p>
-            </a>
-          </div>
-          <div class="TopicoSobre Flex2">
-            <a
-              href="https://educapes.capes.gov.br/bitstream/capes/566023/2/Produto%20-%20Michel%20de%20Souza%202019.pdf"
-              target="_blank"
-              class="Apostila"
-              ><img src="img/pasta.png" id="apostila" alt="Apostila Scratch"
-            /></a>
-            <a
-              href="https://educapes.capes.gov.br/bitstream/capes/566023/2/Produto%20-%20Michel%20de%20Souza%202019.pdf"
-              target="_blank"
-            >
-              <p>Apostila Scratch</p>
-            </a>
-          </div>
-        </div>
+        </b>
+        <a href="frontend.pdf" target="_blank" class="Botao">MAPA</a>
       </div>
-    </section>
-    <!-- One Page -->
-    <section id="onepage">
-      <div class="Container Flex3">
-        <div id="textoSite">
-          <h2><b>Por onde Começar?</b></h2>
+      <div id="qrcode">
+        <img src="img/qrcode.png" id="code" alt="qrCode pdf" />
+      </div>
+    </div>
+  </section>
+  <!-- Conteúdo -->
+  <section id="conteudo">
+    <div class="Container ">
+      <b>
+        <h2 id="soft">Software</h2>
+      </b>
+      <div class="Cards Flex5">
+        <div class="Card">
+          <img src="img/software.png" alt="o que é egenharia?" />
+          <b>
+            <h3>Programação</h3>
+          </b>
           <p>
-            <b
-              >É preciso saber o caminho a ser trilhado, pensando nisso nós
-              elaboramos algumas dicas e apontamentos para seus primeiros passos
-              com programação</b
-            >
+            A programção é essencial para um engenheiro de software,uma das
+            suas principais habilidades.
           </p>
+          <a href="https://www.youtube.com/watch?v=A1BaZr82XJI" target="_blank" class="Botao">Saiba +</a>
         </div>
-        <div id="video">
-          <video
-            src="video/ola.mp4"
-            controls
-            width="560px"
-            height="315"
-          ></video>
+        <div class="Card">
+          <img src="img/algoritmo.jpg" alt="Lógica de programação" />
+          <b>
+            <h3>Lógica de programação</h3>
+          </b>
+          <p>
+            Para programar é necessário compreender a lógica que envolve a programação
+          </p>
+          <a href="https://www.youtube.com/watch?v=JaTf3dhx464" target="_blank" class="Botao">Saiba +</a>
         </div>
-      </div>
-    </section>
-    <!-- Wireframe -->
-    <section id="roadmap">
-      <div class="Container Flex4">
-        <div id="textoroad">
-          <h2>RoadMap</h2>
-          <b
-            ><p>
-              Mapa mental para ajudar no seu aprendizado. Contém apontamentos de
-              algumas linguagens e uma trilha organizada para um melhor
-              aproveitamento dos estudos. Clique no botão<span>
-                ou escanei o QRcode</span
-              >
-            </p></b
-          >
-          <a href="frontend.pdf" target="_blank" class="Botao">MAPA</a>
-        </div>
-        <div id="qrcode">
-          <img src="img/qrcode.png" id="code" alt="qrCode pdf" />
+        <div class="Card">
+          <img src="img/internet.jpg" alt="O que é a internet?" />
+          <b>
+            <h3>Internet</h3>
+          </b>
+          <p>
+            A rede de redes,é preciso compreender essa maravilhosa ferramenta </p>
+          <a href="https://www.youtube.com/watch?v=pKxWPo73pX0" target="_blank" class="Botao">Saiba +</a>
         </div>
       </div>
-    </section>
-    <!-- Conteúdo -->
-    <section id="conteudo">
-      <div class="Container">
-        <h2>Cursos Gratuitos</h2>
-        <h3>Algoritmo</h3>
-        <h3>HTML5 E CSS3</h3>
-        <h3>JavaScript</h3>
+    </div>
+  </section>
+  <!--rodapé-->
+  <address id="roda">
+    <div class="Container Flex6">
+      <div id="contato">
+        <a href="https://api.whatsapp.com/send?phone=5511012342232" target="_blank">
+          <img src="img/whatsapp.png" alt="whatsapp" title="Abrir no Whatsapp">
+          <p>(42)99941-9454</p>
+        </a>
+        <img src="img/phone.png" alt="Telefone" title="Ligar">
+        <p>(42)3232-329329</p>
+        <a href="mailto:rkainfelipe@yahoo.com?subject=Estudos">
+          <img src="img/emai.png" alt="E-mail" title="Enviar E-mail">
+          <p>rkainfelipe@yahoo.com</p>
+        </a>
+
       </div>
-    </section>
-    <footer id="contato">
-      <div class="Container"></div>
-    </footer>
-    <a href="#inicio" id="topo"
-      ><img src="img/dedo.png" alt="topo do site"
-    /></a>
-  </body>
+      <div id="endereco">
+        <a href="https://maps.app.goo.gl/oecEiG9SBM7cCMpW6" target="_blank">
+          <img src="img/map.jpg" alt="Mapa" id="iconeMapa">
+          <img src="img/iconLocal.png" alt="Local" id="iconeLocal">
+          <p>Av. General Carlos Calvancanti</p>
+          <p>Uvaranas</p>
+          <p>Ponta Grossa</p>
+          <p>Paraná-PR 84030-000</p>
+        </a>
+      </div>
+      <div id="googleMaps">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28906.46561099186!2d-50.114517809448245!3d-25.091426439060214!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94e81bf3e7ed9f61%3A0x5796bb29bcf37405!2sUEPG%20-%20Campus%20de%20Uvaranas!5e0!3m2!1spt-BR!2sbr!4v1695737197436!5m2!1spt-BR!2sbr"
+          width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div>
+  </address>
+  <footer>
+    <div class="Container">
+      <div id="copyrigth">
+        <p>&#169 Kainã Eleutério</p>
+      </div>
+      <div id="social">
+        <a href=""></a>
+        <a href=""></a>
+        <a href=""></a>
+        <a href=""></a>
+      </div>
+    </div>
+  </footer>
+  <a href="#inicio" id="topo"><img src="img/dedo.png" alt="topo do site" /></a>
+</body>
+
 </html>
