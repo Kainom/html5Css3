@@ -260,7 +260,7 @@ main h1 {
 }
 
 main h2 {
-  font-size: 1 em;
+  font-size: 1em;
   margin: 20px 0px 50px 0px;
 }
 
@@ -412,10 +412,24 @@ footer img {
     padding-left: 60px;
     position: fixed;
   }
+
+  
 }
 @media (min-width: 360px) {
   label {
     padding-left: 100px;
+  }
+  .Card{
+    width: 320px;
+    height: 520px;
+  }
+  .Card img{
+    width: 320px;
+  }
+
+  #video video{
+      width: 330px;
+      height: 185px;
   }
 }
 @media (min-width: 390px) {
